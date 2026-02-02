@@ -3,8 +3,8 @@ def safe_print_division(a, b):
     """Divide 2 integers and print the result safely."""
     try:
         result = a / b
-        return result
     except Exception:
-        return None
+        result = None
     finally:
-        print("Inside result: {}".format(result if 'result' in locals() else None))
+        print("Inside result: {}".format(result))
+    return result
